@@ -1,4 +1,4 @@
-  document.write("Hello, World!"); //Writes Hello World in Web Site 
+  console.log("Hello, World!"); //Writes Hello World in Web Site 
 
 
 //Variable
@@ -101,6 +101,122 @@ sayHello("Nitendra");
 /*
 Flow Control Statement
 */
+
+
+
+var flow1 =71;
+
+if(flow1 >15){
+    console.log("Greater than Check  "+flow1);
+}
+
+if(flow1<=10){
+    console.log("Smaller Than Check " +flow1);
+}
+
+if(flow1 == 15){
+    console.log ("Equal to Check "+flow1);
+}
+
+if(flow1 != 15){
+   console.log ("Not Equals to  Condition")
+}
+
+
+var name ="niten";
+
+if(name == "Niten"){
+    console.log("Both Name are Same");
+} else {
+    console.log("The condition was false ");
+}
+
+
+/*
+Looping in JavaScript 
+*/
+
+for (i =0;i<5;i++){
+   console.log(" This is Iteration "+i + "<br>");
+}
+
+
+//JavaScript allows maximum 16 Digits Number
+console.log("Maximum allowed number in JavaScript "+Number.MAX_VALUE);
+console.log(" Minimum allowed number in JavaScripr")
+
+
+
+//window.onload =hello();
+
+
+
+
+function hello(){
+var yourName = prompt("What is your Name?");
+
+if(yourName != null){
+    document.getElementById("sayHello").innerHTML ="Hello" + yourName;
+    
+}else{
+    alert("Please enter the Name next time ");
+}
+    
+};
+
+
+
+/*
+Writing to Browser
+*/
+
+document.write("5 +4 =" ,5+4 ,"<br />"); //considers 
+
+document.write("5 +4 =" +5 + 4, "<br />") ; //Conctatenates 5 and 4
+
+
+
+//Root Elemnt 
+console.log(window)
+
+
+//Page Title
+console.log(window.document.title)
+console.log(document.title)
+
+
+/*
+Encoding and decoding of URLs
+*/
+
+
+
+var httpURL = "https://stackoverflow.com/questions?query1=Hello World";
+
+var encodedURL =encodeURI(httpURL);
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+};
+
+
+var urlParameter =  getParameterByName("query1",encodedURL);
+document.write("Encoded URL "+encodedURL);
+
+    document.write(urlParameter);
+
+
+
+
+
+
+
 
 
 
