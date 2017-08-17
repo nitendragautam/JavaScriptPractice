@@ -176,9 +176,6 @@ document.write("5 +4 =" +5 + 4, "<br />") ; //Conctatenates 5 and 4
 
 
 
-//Root Elemnt 
-console.log(window)
-
 
 //Page Title
 console.log(window.document.title)
@@ -212,15 +209,22 @@ document.write("Encoded URL "+encodedURL);
     document.write(urlParameter);
 
 
+var usStatesAbbrebration=new Array('AL','AK','AZ','AR','CA','CO','CT','DC','DE','FL','GA','HI','IA','ID','IL','IN','KS','KY','LA','MA','MD','ME','MI','MN','MS','MO','MT','NC','ND','NE','NH','NJ','NM','NV','NY','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VA','VT','WA','WI','WV','WY');
+
+var usStatesNames=new Array('Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','District of Columbia','Delaware','Florida','Georgia','Hawaii','Iowa','Idaho','Illinois','Indiana','Kansas','Kentucky','Louisiana','Massachusetts','Maryland','Maine','Michigan','Minnesota','Mississippi','Missouri','Montana','North Carolina','North Dakota','Nebraska','New Hampshire','New Jersey','New Mexico','Nevada','New York','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Virginia','Vermont','Washington','Wisconsin','West Virginia','Wyoming');
 
 
+console.log(usStatesNames);
 
 
+console.log("Sine of 3.5 "+Math.sin(3.5));
 
+console.log("Parse Int "+parseInt('123',10));
 
+//Convert Binary number to Integer
+console.log("Parse Int "+parseInt('11',2));
 
-
-
+//Converting 
 
 
 
