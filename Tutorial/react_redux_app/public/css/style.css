@@ -1,0 +1,25 @@
+body {
+    margin:0;
+    font-family: 'Roboto'
+}
+
+
+header {
+    background: #0319f4;
+    text-align: center
+}
+
+
+.logo {
+    color: #fff;
+    font-size: 40px;
+    font-family: Anton;
+}
+
+/*
+Pixerls for Headers 
+*/
+header input {
+    font-size: 20px;
+    margin: 20px 0px;
+}

@@ -41,4 +41,6 @@ React provides two methods for styling elements .They
 are inline method and import method 
 
 
+React does not allows to interacts with browser DOM directly .code needs to go through React to interact with DOM
+
 */
