@@ -43,4 +43,7 @@ are inline method and import method
 
 React does not allows to interacts with browser DOM directly .code needs to go through React to interact with DOM
 
+
+//State in React 
+If we want to change the state in React JS we need tod do that with the help of this.serState() method
 */

@@ -9,9 +9,23 @@ This header components is a class based components
 
 
 class Header  extends Component {
+    
+    constructor(props){
+        super(props);
+        
+        
+        this.state ={
+            title: 'The keywords are:',
+            keywords:''
+        }
+    }
+    
+    
     //Catches the event that changes in browser
+    
+    //After change a new state is set for KeyWord
     inputChange(event){
-        console.log(event.target.value)
+       this.setState({keywords:event.target.value})
     }
     
     
@@ -30,7 +44,10 @@ class Header  extends Component {
             <div className ="logo"
             onClick={()=>console.log('clicked')}
             >Logo</div>
-            <input onChange={this.inputChange}/>
+            <input onChange={this.inputChange.bind(this)}/>
+            <div>{this.state.title}</div>
+            <div>{this.state.keywords}</div>
+
             </header>
         )
     }
